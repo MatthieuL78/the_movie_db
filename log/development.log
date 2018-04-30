@@ -1,0 +1,669 @@
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (68.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (38.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateMovies (20180430073924)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "movies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "release_year" integer, "director" varchar)[0m
+  ↳ db/migrate/20180430073924_create_movies.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180430073924"]]
+  ↳ bin/rails:9
+  [1m[35m (38.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-04-30 07:40:26.215548"], ["updated_at", "2018-04-30 07:40:26.215548"]]
+  ↳ bin/rails:9
+  [1m[35m (26.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "release_year", "director") VALUES (?, ?, ?)[0m  [["title", "Gladiator"], ["release_year", 1998], ["director", "Ridley Scott"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (37.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "release_year", "director") VALUES (?, ?, ?)[0m  [["title", "Gladiator"], ["release_year", 1998], ["director", "Ridley Scott"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (48.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "release_year", "director") VALUES (?, ?, ?)[0m  [["title", "Seven"], ["release_year", 1997], ["director", "Pitt"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (33.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "release_year", "director") VALUES (?, ?, ?)[0m  [["title", "Amadeus"], ["release_year", 1992], ["director", "Mozart"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (34.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "release_year", "director") VALUES (?, ?, ?)[0m  [["title", "Barry Lindon"], ["release_year", 1978], ["director", "McAuney"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (31.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "release_year", "director") VALUES (?, ?, ?)[0m  [["title", "Nightmare before Christmas"], ["release_year", 1996], ["director", "Tim Burton"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (33.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[35m (49.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:9
+  [1m[35m (29.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:9
+  [1m[35m (34.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:9
+  [1m[35m (29.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 5]]
+  ↳ db/seeds.rb:9
+  [1m[35m (31.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMovie Destroy (0.6ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 6]]
+  ↳ db/seeds.rb:9
+  [1m[35m (31.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "release_year", "director") VALUES (?, ?, ?)[0m  [["title", "Gladiator"], ["release_year", 1998], ["director", "Ridley Scott"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (31.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "release_year", "director") VALUES (?, ?, ?)[0m  [["title", "Seven"], ["release_year", 1997], ["director", "Pitt"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (29.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "release_year", "director") VALUES (?, ?, ?)[0m  [["title", "Amadeus"], ["release_year", 1992], ["director", "Mozart"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (41.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[36mMovie Create (0.7ms)[0m  [1m[32mINSERT INTO "movies" ("title", "release_year", "director") VALUES (?, ?, ?)[0m  [["title", "Barry Lindon"], ["release_year", 1978], ["director", "McAuney"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (29.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "release_year", "director") VALUES (?, ?, ?)[0m  [["title", "Nightmare before Christmas"], ["release_year", 1996], ["director", "Tim Burton"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (31.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+Started GET "/" for 127.0.0.1 at 2018-04-30 09:55:25 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:2
+  Rendered movies/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 426ms (Views: 416.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 09:55:39 +0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:2
+  Rendered movies/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.1ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to UpdateDirector (20180430081939)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to UpdateDirector (20180430081939)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to UpdateDirector (20180430081939)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180430081939_update_director.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "amovies" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "release_year" integer DEFAULT NULL, "director" varchar DEFAULT NULL)[0m
+  ↳ db/migrate/20180430081939_update_director.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "amovies" ("id","title","release_year","director")
+                     SELECT "id","title","release_year","director" FROM "movies"[0m
+  ↳ db/migrate/20180430081939_update_director.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "movies"[0m
+  ↳ db/migrate/20180430081939_update_director.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "movies" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "release_year" integer DEFAULT NULL)[0m
+  ↳ db/migrate/20180430081939_update_director.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("id","title","release_year")
+                     SELECT "id","title","release_year" FROM "amovies"[0m
+  ↳ db/migrate/20180430081939_update_director.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "amovies"[0m
+  ↳ db/migrate/20180430081939_update_director.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "movies" ADD "director_id_id" integer[0m
+  ↳ db/migrate/20180430081939_update_director.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_movies_on_director_id_id" ON "movies" ("director_id_id")[0m
+  ↳ db/migrate/20180430081939_update_director.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "directors" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar, "last_name" varchar)[0m
+  ↳ db/migrate/20180430081939_update_director.rb:7
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180430081939"]]
+  ↳ bin/rails:9
+  [1m[35m (39.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 7]]
+  ↳ db/seeds.rb:9
+  [1m[35m (40.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 8]]
+  ↳ db/seeds.rb:9
+  [1m[35m (33.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 9]]
+  ↳ db/seeds.rb:9
+  [1m[35m (31.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 10]]
+  ↳ db/seeds.rb:9
+  [1m[35m (31.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 11]]
+  ↳ db/seeds.rb:9
+  [1m[35m (31.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mDirector Load (0.1ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mDirector Create (0.2ms)[0m  [1m[32mINSERT INTO "directors" ("first_name", "last_name") VALUES (?, ?)[0m  [["first_name", "Ridley"], ["last_name", "Scott"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (33.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mDirector Load (0.1ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDirector Destroy (0.1ms)[0m  [1m[31mDELETE FROM "directors" WHERE "directors"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (46.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mDirector Create (0.5ms)[0m  [1m[32mINSERT INTO "directors" ("first_name", "last_name") VALUES (?, ?)[0m  [["first_name", "Ridley"], ["last_name", "Scott"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (30.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mDirector Load (0.1ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDirector Destroy (0.2ms)[0m  [1m[31mDELETE FROM "directors" WHERE "directors"."id" = ?[0m  [["id", 2]]
+  ↳ db/seeds.rb:10
+  [1m[35m (29.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mDirector Create (0.2ms)[0m  [1m[32mINSERT INTO "directors" ("first_name", "last_name") VALUES (?, ?)[0m  [["first_name", "Ridley"], ["last_name", "Scott"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (26.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to UpdateDirectorId (20180430084214)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20180430084214_update_director_id.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "amovies" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "release_year" integer DEFAULT NULL, "director_id_id" integer DEFAULT NULL)[0m
+  ↳ db/migrate/20180430084214_update_director_id.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_amovies_on_director_id_id" ON "amovies" ("director_id_id")[0m
+  ↳ db/migrate/20180430084214_update_director_id.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "amovies" ("id","title","release_year","director_id_id")
+                     SELECT "id","title","release_year","director_id_id" FROM "movies"[0m
+  ↳ db/migrate/20180430084214_update_director_id.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "movies"[0m
+  ↳ db/migrate/20180430084214_update_director_id.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "movies" ("id" integer NOT NULL PRIMARY KEY, "title" varchar DEFAULT NULL, "release_year" integer DEFAULT NULL)[0m
+  ↳ db/migrate/20180430084214_update_director_id.rb:3
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("id","title","release_year")
+                     SELECT "id","title","release_year" FROM "amovies"[0m
+  ↳ db/migrate/20180430084214_update_director_id.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "amovies"[0m
+  ↳ db/migrate/20180430084214_update_director_id.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "movies" ADD "director_id" integer[0m
+  ↳ db/migrate/20180430084214_update_director_id.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_movies_on_director_id" ON "movies" ("director_id")[0m
+  ↳ db/migrate/20180430084214_update_director_id.rb:5
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180430084214"]]
+  ↳ bin/rails:9
+  [1m[35m (30.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mDirector Load (0.1ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDirector Destroy (0.2ms)[0m  [1m[31mDELETE FROM "directors" WHERE "directors"."id" = ?[0m  [["id", 3]]
+  ↳ db/seeds.rb:10
+  [1m[35m (31.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mDirector Create (0.2ms)[0m  [1m[32mINSERT INTO "directors" ("first_name", "last_name") VALUES (?, ?)[0m  [["first_name", "Ridley"], ["last_name", "Scott"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (27.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mMovie Create (0.4ms)[0m  [1m[32mINSERT INTO "movies" ("title", "release_year", "director_id") VALUES (?, ?, ?)[0m  [["title", "Gladiator"], ["release_year", 1998], ["director_id", 4]]
+  ↳ db/seeds.rb:13
+  [1m[35m (30.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mDirector Load (0.1ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" WHERE "directors"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."director_id" = ?[0m  [["director_id", 4]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mMovie Destroy (0.2ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[35m (64.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:9
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[36mDirector Destroy (0.2ms)[0m  [1m[31mDELETE FROM "directors" WHERE "directors"."id" = ?[0m  [["id", 4]]
+  ↳ db/seeds.rb:10
+  [1m[35m (36.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[36mDirector Create (0.5ms)[0m  [1m[32mINSERT INTO "directors" ("first_name", "last_name") VALUES (?, ?)[0m  [["first_name", "Ridley"], ["last_name", "Scott"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (33.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[36mMovie Create (0.5ms)[0m  [1m[32mINSERT INTO "movies" ("title", "release_year", "director_id") VALUES (?, ?, ?)[0m  [["title", "Gladiator"], ["release_year", 1998], ["director_id", 5]]
+  ↳ db/seeds.rb:13
+  [1m[35m (40.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[36mDirector Create (0.5ms)[0m  [1m[32mINSERT INTO "directors" ("first_name", "last_name") VALUES (?, ?)[0m  [["first_name", "Milos"], ["last_name", "Forman"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (33.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ db/seeds.rb:16
+  [1m[36mMovie Create (0.6ms)[0m  [1m[32mINSERT INTO "movies" ("title", "release_year", "director_id") VALUES (?, ?, ?)[0m  [["title", "Amadeus"], ["release_year", 1984], ["director_id", 6]]
+  ↳ db/seeds.rb:16
+  [1m[35m (32.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ db/seeds.rb:16
+Started GET "/" for 127.0.0.1 at 2018-04-30 10:50:15 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  Rendered movies/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+
+SyntaxError - syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/malus/theHackingProject/Day20/the_movie_database/app/views/movies/index.html.erb:9: syntax error, unexpected end-of-input, expecting keyword_end:
+  app/views/movies/index.html.erb:7:in `'
+
+Started POST "/__better_errors/a7b814c4026e18f2/variables" for 127.0.0.1 at 2018-04-30 10:50:16 +0200
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT  "directors".* FROM "directors" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+Started GET "/" for 127.0.0.1 at 2018-04-30 10:50:57 +0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/movies/index.html.erb:2
+  Rendered movies/index.html.erb within layouts/application (19.7ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.2ms)
+
+
+
+NoMethodError - undefined method `each' for #<Director id: 5, first_name: "Ridley", last_name: "Scott">:
+  app/views/movies/index.html.erb:3:in `block in _app_views_movies_index_html_erb___3185594952298269890_30421440'
+  app/views/movies/index.html.erb:2:in `_app_views_movies_index_html_erb___3185594952298269890_30421440'
+
+Started POST "/__better_errors/b10f0c0a13abf818/variables" for 127.0.0.1 at 2018-04-30 10:50:57 +0200
+Started GET "/" for 127.0.0.1 at 2018-04-30 10:51:26 +0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/movies/index.html.erb:2
+  Rendered movies/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+
+
+NoMethodError - undefined method `movie' for #<Director id: 5, first_name: "Ridley", last_name: "Scott">
+Did you mean?  movies
+               movies=:
+  app/views/movies/index.html.erb:3:in `block in _app_views_movies_index_html_erb___3185594952298269890_10341800'
+  app/views/movies/index.html.erb:2:in `_app_views_movies_index_html_erb___3185594952298269890_10341800'
+
+Started POST "/__better_errors/95a133e7457b08c3/variables" for 127.0.0.1 at 2018-04-30 10:51:26 +0200
+Started GET "/" for 127.0.0.1 at 2018-04-30 10:51:34 +0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.1ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/movies/index.html.erb:2
+  Rendered movies/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 204ms (Views: 203.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 10:51:42 +0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/movies/index.html.erb:2
+  Rendered movies/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 10:52:05 +0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.1ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/movies/index.html.erb:2
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  Rendered movies/index.html.erb within layouts/application (47.6ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 2.3ms)
+
+
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+
+NoMethodError - undefined method `title' for #<Movie::ActiveRecord_Associations_CollectionProxy:0x007f27316a1440>:
+  app/views/movies/index.html.erb:3:in `block in _app_views_movies_index_html_erb___3185594952298269890_69903150170860'
+  app/views/movies/index.html.erb:2:in `_app_views_movies_index_html_erb___3185594952298269890_69903150170860'
+
+Started POST "/__better_errors/c18acc653f05ddd6/variables" for 127.0.0.1 at 2018-04-30 10:52:05 +0200
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+Started GET "/" for 127.0.0.1 at 2018-04-30 10:54:35 +0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.1ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/movies/index.html.erb:2
+  Rendered movies/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 10:54:45 +0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.1ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/movies/index.html.erb:2
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  Rendered movies/index.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+
+NoMethodError - undefined method `title' for #<Movie::ActiveRecord_Associations_CollectionProxy:0x007f2731498568>:
+  app/views/movies/index.html.erb:3:in `block in _app_views_movies_index_html_erb___3185594952298269890_69902986563280'
+  app/views/movies/index.html.erb:2:in `_app_views_movies_index_html_erb___3185594952298269890_69902986563280'
+
+Started POST "/__better_errors/5984a54612bee5f2/variables" for 127.0.0.1 at 2018-04-30 10:54:45 +0200
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."director_id" = ? LIMIT ?[0m  [["director_id", 5], ["LIMIT", 11]]
+  ↳ /home/malus/.rvm/gems/ruby-2.3.4@global/gems/did_you_mean-1.0.0/lib/did_you_mean/core_ext/name_error.rb:10
+Started GET "/" for 127.0.0.1 at 2018-04-30 10:56:29 +0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/movies/index.html.erb:2
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."director_id" = ?[0m  [["director_id", 5]]
+  ↳ app/views/movies/index.html.erb:3
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."director_id" = ?[0m  [["director_id", 6]]
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 10:57:12 +0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/movies/index.html.erb:2
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."director_id" = ?[0m  [["director_id", 5]]
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+
+ArgumentError - wrong number of arguments (given 1, expected 0):
+  app/views/movies/index.html.erb:4:in `block (2 levels) in _app_views_movies_index_html_erb___3185594952298269890_69903150517720'
+  app/views/movies/index.html.erb:3:in `block in _app_views_movies_index_html_erb___3185594952298269890_69903150517720'
+  app/views/movies/index.html.erb:2:in `_app_views_movies_index_html_erb___3185594952298269890_69903150517720'
+
+Started POST "/__better_errors/4f44e3be1cc24dbf/variables" for 127.0.0.1 at 2018-04-30 10:57:12 +0200
+Started GET "/" for 127.0.0.1 at 2018-04-30 10:57:28 +0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/movies/index.html.erb:2
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."director_id" = ?[0m  [["director_id", 5]]
+  ↳ app/views/movies/index.html.erb:3
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."director_id" = ?[0m  [["director_id", 6]]
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 10:58:08 +0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/movies/index.html.erb:2
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."director_id" = ?[0m  [["director_id", 5]]
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (255.3ms)
+Completed 500 Internal Server Error in 258ms (ActiveRecord: 0.3ms)
+
+
+
+NameError - undefined local variable or method `director_' for #<#<Class:0x00000004174180>:0x007f2730ec2c60>
+Did you mean?  director
+               @directors:
+  app/views/movies/index.html.erb:4:in `block (2 levels) in _app_views_movies_index_html_erb___3185594952298269890_69903150619420'
+  app/views/movies/index.html.erb:3:in `block in _app_views_movies_index_html_erb___3185594952298269890_69903150619420'
+  app/views/movies/index.html.erb:2:in `_app_views_movies_index_html_erb___3185594952298269890_69903150619420'
+
+Started POST "/__better_errors/40c029f766d5330b/variables" for 127.0.0.1 at 2018-04-30 10:58:08 +0200
+Started GET "/" for 127.0.0.1 at 2018-04-30 10:58:17 +0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.2ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/movies/index.html.erb:2
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."director_id" = ?[0m  [["director_id", 5]]
+  ↳ app/views/movies/index.html.erb:3
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."director_id" = ?[0m  [["director_id", 6]]
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-04-30 10:58:27 +0200
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mDirector Load (0.1ms)[0m  [1m[34mSELECT "directors".* FROM "directors"[0m
+  ↳ app/views/movies/index.html.erb:2
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."director_id" = ?[0m  [["director_id", 5]]
+  ↳ app/views/movies/index.html.erb:3
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."director_id" = ?[0m  [["director_id", 6]]
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.4ms)
+
+

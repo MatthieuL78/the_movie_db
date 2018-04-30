@@ -1,0 +1,6 @@
+<h1>Ma liste de film</h1>
+<% @directors.each do |director| %>
+  <% director.movies.each do |movie| %>
+    <%= "#{movie.title} by #{director.first_name} #{director.last_name}" %> <br>
+  <% end %>
+<% end %>
