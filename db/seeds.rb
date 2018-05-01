@@ -15,3 +15,11 @@ my_director.movies << Movie.create(title: 'Gladiator', release_year: 1998)
 my_director = Director.create(first_name: 'Milos', last_name: 'Forman')
 my_director.movies << Movie.create(title: 'Amadeus', release_year: 1984)
 
+my_director = Director.create(first_name: 'Hayao', last_name: 'Miyazaki')
+my_director.movies << Movie.create(title: 'Porco Rosso', release_year: 1995)
+
+my_director = Director.create(first_name: 'Jean-Marie', last_name: 'Poiré')
+my_director.movies << Movie.create(title: 'Les visiteurs', release_year: 1993)
+
+my_director = Director.create(first_name: 'Sanjay', last_name: 'Gadhvi')
+my_director.movies << Movie.create(title: 'Dhoom', release_year: 2004)

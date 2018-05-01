@@ -1,24 +1,34 @@
-# README
+# Database Movie 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ce projet est une database comprenant 2 models : Movie et Director. La page montre tous les films présents dans la database et utilise un seed pour rajouter les données.
 
-Things you may want to cover:
+## Lancer le projet
+Pour lancer le projet, sur le terminal (dans le dossier concerne) :
+```
+bundle install --without production
+```
 
-* Ruby version
+```
+rails db:migrate
+```
 
-* System dependencies
+```
+rails db:seed
+```
 
-* Configuration
+```
+rails s
+```
 
-* Database creation
+Vous pouvez observer la page dans 'localhost:3000'
 
-* Database initialization
+Pour remplir la database, rajouter les informations dans le seed : db/seeds.rb
 
-* How to run the test suite
+```
+my_director = Director.create(first_name: 'Prenom_real', last_name: 'Nom_real')
+my_director.movies << Movie.create(title: 'Nom_film', release_year: date_de_sortie)
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Vous pouvez voir le projet sur heroku : 
 
-* Deployment instructions
-
-* ...
+* https://rocky-depths-45750.herokuapp.com/
