@@ -28,7 +28,3 @@ Pour remplir la database, rajouter les informations dans le seed : db/seeds.rb
 my_director = Director.create(first_name: 'Prenom_real', last_name: 'Nom_real')
 my_director.movies << Movie.create(title: 'Nom_film', release_year: date_de_sortie)
 ```
-
-Vous pouvez voir le projet sur heroku : 
-
-* https://rocky-depths-45750.herokuapp.com/
